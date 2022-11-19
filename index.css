@@ -78,15 +78,15 @@ p {
     border: 0;
 
 }
-.pass-span {
-    /* display: none; */
+/* .pass-span {
+    display: none;
     font-size: 9.25px;
     font-weight: lighter;
     color: rgba(255, 255, 255, 0.240);
     position: relative;
     left: 38%;
     top: 50%;
-}
+} */
 
 #options-container{
     color: #D5D4D8;
