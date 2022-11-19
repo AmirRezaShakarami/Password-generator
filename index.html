@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="pretty-checkbox.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="tool-box">
+            <h1>Generate a <br> <span>random password</span> </h1>
+            <p>Never use a insecure password again.</p>
+            <button id="generate-el" onclick="generate()">Generate passwords</button>
+
+            <div id="options-container">
+
+                <div class="pretty p-switch p-fill">
+                    <input id="numbers-check" type="checkbox" checked/>
+                    <div class="state p-primary">
+                        <label id="numbers-label">Numbers</label>
+                    </div>
+                </div>
+                <div class="pretty p-switch p-fill">
+                    <input id="symbols-check" type="checkbox" checked />
+                    <div class="state p-primary ">
+                        <label id="symbols-label">Symbols</label>
+                    </div>
+                </div>
+
+                <div id="slide-container">
+
+                    <label for="length-slider" id="length-label">Length: </label>
+                    <label for="length-slider" id="length-counter"></label>
+                    <input type="range" class="slider" id="length-slider" min="8" max="32" value="8">
+
+                </div>
+  
+
+            </div>
+
+            <p id="solid-line"></p>
+
+            <div id="pass-container">
+                <button class="pass-el" id ="pass1"> <p class="pass-span"></p> </button>
+                <button class="pass-el" id ="pass2"> <p class="pass-span"></p> </button>
+            </div>
+
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
